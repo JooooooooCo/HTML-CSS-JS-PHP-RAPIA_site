@@ -1,1 +1,3 @@
-# RAPIA_site
+# RAPIA: Site
+
+- Construindo site com html, css, bootstrap, javascript e php...
