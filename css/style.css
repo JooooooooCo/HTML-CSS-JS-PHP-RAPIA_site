@@ -1,12 +1,772 @@
-.navbar{
-    background-color: white;
+body, ul, li,p, button{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
 }
 
-.navbar-brand{
-    margin-left: 5rem;
+:root{
+    font-size: 16px;
+    list-style: none;
+    font-family: Roboto, sans-serif;
 }
 
-.logo{
+/*
+@media (min-width: 576px) {
+    :root{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    :root{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) {
+    :root{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root{
+        font-size: 16px;
+    }
+}
+*/
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    
+}
+
+button{
+    width: 13.85rem;
+    height: 4.125rem;
+    background: #E76F51;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 3.75rem;
+    border: none;
+    outline: none;
+}
+
+/*------------------ header ---------------------------------------------------------------------------------*/
+
+header{
+    display: flex;
     height: 5rem;
+    background-color:white;
+    justify-content: space-between;
+    padding: 1.875rem;
+    align-items: center;
+    box-shadow: 0rem 0.125rem    0.25rem    #888888;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 100;
+}
 
+.nav ul{
+    display: flex;
+}
+
+.nav ul li a{
+    margin-left: 0.9375rem;
+    display: block;
+    padding: 0.625rem;
+    text-decoration: none;
+    color: #003030;
+    font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+
+.headerlogo{
+    height: 4.125rem;
+}
+
+.topnav-menu-icon{
+    display: none;
+}
+
+/*------------------ body ---------------------------------------------------------------------------------*/
+
+h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color: #E76F51;
+    text-align: left;
+    margin-bottom: 0.9375rem;
+   
+}
+
+h2{
+    font-size: 3rem;
+    letter-spacing: 0.03rem;
+    color: #003030;
+    text-align: left;
+    margin-bottom: 1.875rem;
+}
+
+/*------------------ home ---------------------------------------------------------------------------------*/
+
+
+.homebackimage{
+    background-image: url(../img/homerobothand.png);
+    background-color: #00A285;
+    min-height: 47.8125rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.homebackfilter{
+    /*background: rgba(0, 162, 133, 0.8);*/
+    background: linear-gradient(0deg, rgba(1,45,37,1) 0%, rgba(0,162,133,0.9) 100%);
+    min-height: 47.8125rem;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.homecontent{
+    padding-top: 10rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 5rem;
+    max-width: 86.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4.5rem;
+    letter-spacing: 0.05rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hometext{
+    margin-top: 3.125rem;
+    margin-bottom: 4.375rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+/*------------------ nossas solucoes ---------------------------------------------------------------------------------*/
+.nossassolucoesbackimage{
+    background-image: url(../img/nossassolucoesquadradoback.png);
+    background-color: white;
+    min-height: 82.0625rem;
+    background-position: -4.5625rem    -10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.nossassolucoescontent{
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 86.25rem;
+    margin: 0 auto;
+}
+
+/*------------------ nossas solucoes / intro */
+.nossassolucoesintro{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.nossassolucoesintrotext{
+    width: 65%;
+    color: #333333 ;
+    margin-left: 1.25rem;
+    padding-right: 5rem;
+}
+
+.nossassolucoesintroimg{
+    width: 35%;
+    color: #333333 ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.nossassolucoesintroimg img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 1.25rem;
+}
+
+/*------------------ nossas solucoes / cards */
+.nossassolucoesmain{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: top;
+    padding-bottom: 50px;
+    padding-top: 60px;
+}
+
+.nossassolucoesmaintitle{
+    width: 100%;
+    color: #333333 ;
+    margin-left: 0rem;
+    padding-right: 5rem;
+}
+
+.nossassolucoesmaintitle p{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/*
+.nossassolucoesmaincards{
+    margin: 0 auto;
+    margin-top: 50px;
+    left: -20px;
+    color: #333333 ;
+    display: flex;
+    overflow-x: scroll;
+}
+*/
+
+.nossassolucoesmaincards {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 50px;
+    scrollbar-width: none
+}
+
+.nossassolucoesmaincards::-webkit-scrollbar {    
+    display: none;
+}
+
+  .nossassolucoesmaincards.active {
+    background: rgba(255,255,255,0.3);
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+  }
+
+
+  .nossassolucoesmaincardscard{
+    min-width: 345px;
+    min-height: 420px;
+    color: #333333;
+    margin-right: 70px;
+    position: relative;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*
+  .item {
+    display: inline-block;
+    background: skyblue;
+    min-height: 250px;
+    min-width: 400px;
+    margin: 2em 1em;
+    @media screen and (max-width: 500px) {
+      min-height: 200px;
+      min-width: 200px;
+    }
+  }
+  */
+/*
+.nossassolucoesmaincardscard{
+    max-width: 345px;
+    max-height: 460px;
+    min-height: 200px;
+    color: #333333;
+    margin-left: 30px;
+    position: relative;
+    left: -277.5px;
+    background-color: lawngreen;
+
+}
+*/
+/*
+.nossassolucoesmaincardscard:hover {
+    transform: translateY(-1rem);
+}
+*/
+
+.nossassolucoesmaincardscardimg{
+    max-height: 85px;
+}
+
+.nossassolucoesmaincardscardimg img{
+    max-height: 100%;
+}
+
+.nossassolucoesmaincardscard h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+.nossassolucoesmaincardscard p{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 70px;
+}
+
+.nossassolucoesmaincardscard button{
+    background: #11A493;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    line-height: 2rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border: none;
+    outline: none;
+}
+
+.nossassolucoesmaincardscardvantagens {
+    background-color: #003030;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    bottom: 60px;
+    display: none;
+}
+
+.nossassolucoesmaincardscardvantagens.selected {
+    display: block;
+}
+
+.nossassolucoesmaincardscardvantagens p{
+    text-align: left;
+    margin-bottom: 0px;
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    color: white;
+}
+
+/*------------------ vantagens ---------------------------------------------------------------------------------*/
+.vantagensbackground{
+    padding-bottom: 5rem;
+    background-color: #E6E6E6;
+    padding-top: 5rem;
+}
+
+.vantagenscontent{
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 86.25rem;
+    margin: 0 auto;
+}
+
+.vantagensmain{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.vantagensmaincard{
+    background-color: white;
+    min-width: 345px;
+    max-height: 460px;
+    color: black;
+    display: flex;
+}
+
+.vantagensmaincard img{
+    height: 126px;
+    margin: 50px;
+}
+
+.vantagensmaincardtext{
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.vantagensmaincardtext h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.vantagensmaincardtext p{
+    font-size: 16px;
+}
+
+/*------------------ Robos Trabalhando ---------------------------------------------------------------------------------*/
+.robostrabalhandobackimage{
+    background-image: url(../img/robostrabalhandorobotdesk.png);
+    background-color: white;
+    min-height: 52rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.robostrabalhandobackfilter{
+    background: rgba(0, 162, 133, 0.72);
+    min-height: 52rem;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 5rem;
+}
+
+.robostrabalhandocontent{
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 5rem;
+    max-width: 86.25rem;
+    margin: 0 auto;
+}
+
+.robostrabalhandocontent h2{
+    color: white;
+}
+
+.robostrabalhandocontent h3{
+    color: #FFBCAB;
+}
+
+.robostrabalhandomain{
+    height: 432px;
+    width: 768px;
+    background-color: #333333;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.robostrabalhandomain p{
+    color: white;
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+/*------------------ Sobre Nos ---------------------------------------------------------------------------------*/
+.sobrenosbackground{
+    padding-bottom: 5rem;
+    background-color: white;
+    padding-top: 5rem;
+}
+
+.sobrenoscontent{
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 86.25rem;
+    margin: 0 auto;
+}
+
+.sobrenosmain{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sobrenosmainrow1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.sobrenosmaincardnosomos{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.sobrenosmaincardnosomos h4{
+    padding-top: 20px;
+    min-width: 160px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003030;
+}
+
+.sobrenosmaincardnosomoscontent{
+    background-color: #095047;
+    max-width: 380px;
+    min-height: 420px;
+    letter-spacing: 0.05rem;
+    color: white;
+    line-height: 28px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+}
+
+.sobrenosmaincardnosomoscontent img{
+    max-width: 126px;
+    margin: 0 auto;
+}
+
+
+.sobrenosmaincardnosomoscontent p{
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+
+.sobrenosmainimg{
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+.sobrenosmainimg img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.sobrenosmainrow2{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.sobrenosmaincardnossamissao h4{
+    padding-top: 20px;
+    min-width: 160px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003030;
+}
+
+.sobrenosmaincardnossamissaocontent{
+    background-color: #06675C;
+    max-width: 1094px;
+    min-height: 150px;
+    letter-spacing: 0.05rem;
+    color: white;
+    line-height: 28px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobrenosmaincardnossamissaocontent img{
+    max-width: 126px;
+    max-height: 126px;
+    margin-right: 30px;
+}
+
+
+.sobrenosmaincardnossamissaocontent p{
+    font-size: 16px;
+}
+
+/*------------------ Contato ---------------------------------------------------------------------------------*/
+
+/*               ver contato apagado transparente                           */
+.contatobackground{
+    background-color: #11A493;
+    min-height: 857px;
+    position: relative;
+}
+
+.contatoheader{
+    background-image: url(../img/contactdesktop.png);
+    background-color: #11A493;
+    min-height: 22.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatoheader h2{
+    color: white;
+}
+
+.contatocontent{
+    background-color: #007364;
+    border-radius: 25px 25px 0 0;
+    padding-top: 1.875rem;
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 680px;
+    min-height: 600px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,0px);
+
+}
+
+.contatoformtext h4{
+    color: white;
+    font-size: 18px;
+}
+
+.contatoformtext p{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.contatoformcampo{
+    padding-top: 20px;
+}
+
+.contatoformbutton{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatoformbutton button{
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*------------------ Footer ---------------------------------------------------------------------------------*/
+
+.footerbackground{
+    padding-bottom: 1.25rem;
+    background-color: #003030;
+    padding-top: 5rem;
+}
+
+.footercontent{
+    padding-top: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    max-width: 86.25rem;
+    margin: 0 auto;
+}
+
+.footermain{
+    min-height: 670px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: top;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+}
+
+.footermainlogo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footermaincontato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.footermaincontatoemail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footermaincontatofone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footermaincontatotext{
+    padding-left: 15px;
+}
+
+.footermaincontato div > a > img{
+    padding: 15px;
+}
+
+.footerend{
+    max-width: 910px;
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 1px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footerend p{
+    color: white;
+    font-size: 12px;
 }
