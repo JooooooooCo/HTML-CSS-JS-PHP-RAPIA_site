@@ -527,7 +527,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                     </h2>
                 </div> 
                 <div class="contatocontent">
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="form-contact contact_form" name="contactForm" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                         <div class="contatoformtext">
                             <h4>
                                 Quer saber mais ?
@@ -543,7 +543,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                             <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email *'" placeholder="Email *">
                         </div>
                         <div class="contatoformcampo">
-                            <input class="form-control valid" name="telefone" id="telefone" type="tel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fone'" placeholder="Fone">
+                            <input class="form-control valid" name="telefone" id="telefone" type="tel" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fone *'" placeholder="Fone *">
                         </div>
                         <div class="contatoformcampo">
                             <input class="form-control valid" name="nomedaempresa" id="nomedaempresa" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome da Empresa'" placeholder="Nome da Empresa">
@@ -552,7 +552,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                             <input class="form-control valid" name="cargo" id="cargo" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Seu Cargo'" placeholder="Seu Cargo">
                         </div>                    
                         <div class="contatoformbutton">
-                            <button type="submit" class="button button-contactForm boxed-btn">Enviar</button>
+                            <button type="button" class="button button-contactForm boxed-btn" onclick="validarContactForm()">Enviar</button>
                         </div>
                         <div id="popupStatusMensagemContato" class="contatoformstatusmensagemcontato">
                             <div>
@@ -564,7 +564,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                             <p id="popupStatusMensagemContatoText">
                                 Mensagem enviada com sucesso!
                                 <br>
-                                Entraremos em contato o mais breve possível, dentro das próximas 48h.
+                                Entraremos em contato o mais breve possível.
                             </p>
                         </div>
                     </form>

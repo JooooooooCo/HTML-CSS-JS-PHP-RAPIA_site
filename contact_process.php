@@ -12,13 +12,13 @@ $headers .= "From: contato@rapia.com.br" . "\r\n";
 $headers .= "Reply-To:". $email . "\r\n";
 $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
 
-$message = $nome. "<br>\r\n".
+$message = "Nome: ".$nome. "<br>\r\n".
 "Email: ".$email . "<br>\r\n".
 "Telefone: ".$telefone."<br>\r\n".
 "Nome da Empresa: ".$nomedaempresa."<br>\r\n".
 "Cargo: ".$cargo;
 
-if (@mail($to, $email, $message, $headers))
+if (@mail($to, $subject, $message, $headers))
 {
 	$statusmensagemcontato = "1";
 	//sucesso
