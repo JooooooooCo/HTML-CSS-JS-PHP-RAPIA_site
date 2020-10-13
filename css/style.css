@@ -695,6 +695,56 @@ h1{
     line-height: 24px;
 }
 
+.contatoformstatusmensagemcontato{
+    background-color: #E76F51;
+    min-height: 200px;
+    min-width: 400px;
+    position: absolute;
+    padding-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.contatoformstatusmensagemcontato div{
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    text-align: end;
+    padding: 5px;
+}
+
+.contatoformstatusmensagemcontato div > a{
+    color: white;
+}
+
+.contatoformstatusmensagemcontato div > a:hover{
+    color: rgb(224, 224, 224);
+}
+
+.contatoformstatusmensagemcontatoicon{
+    color: white;
+    font-size: 48px;
+}
+
+.contatoformstatusmensagemcontato p{
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+}
+
+.contatoformstatusmensagemcontato p > a{
+    color: white;
+}
+
 /*------------------ Footer ---------------------------------------------------------------------------------*/
 
 .footerbackground{

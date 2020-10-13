@@ -1,3 +1,11 @@
+<?php
+
+    //include 'contact_process.php';
+    $statusmensagemcontato = $_GET['stsmsg'];
+    //<?php echo $statusmensagemcontato; *****?*>
+?>
+
+
 <!--
 
 CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCRIPT....
@@ -68,7 +76,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                             Deixe o trabalho <strong>repetitivo</strong> com nossos <strong>robôs</strong> e
                             </br> sua <strong>equipe</strong> dedicada ao crescimento do seu <strong>negócio</strong>.
                         </p>
-                        <Button type="button">
+                        <Button type="button" onclick="location.href='#contato';">
                             Saiba Mais
                         </Button>
                     </div>
@@ -546,6 +554,17 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                         <div class="contatoformbutton">
                             <button type="submit" class="button button-contactForm boxed-btn">Enviar</button>
                         </div>
+                        <div id="popupStatusMensagemContato" class="contatoformstatusmensagemcontato">
+                            <div>
+                                <a href="javascript:void(0);" class="icon" onclick="fecharStatusMensagemContato()">
+                                    <i class="material-icons">close</i>
+                                </a>
+                            </div>
+                            <i id="popupStatusMensagemContatoIcon" class="material-icons contatoformstatusmensagemcontatoicon">done</i>
+                            <p id="popupStatusMensagemContatoText">
+                                Mensagem enviada com sucesso!
+                            </p>
+                        </div>
                     </form>
                 </div>
             </div>            
@@ -564,7 +583,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
 
 
 
-        <footer class="section">
+        <footer id="footer" class="section">
             <div class="footerbackground">
                 <div class="footercontent">
                     <div class="footermain">
@@ -630,9 +649,22 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 console.log(walk);
             });
         </script>
-       
 
 
+
+        <script type="text/javascript">
+            // Define popup de retorno da mensagem de contato enviado
+            var x = "<?php echo $statusmensagemcontato;?>";
+            if (x === "1") {
+                document.getElementById("popupStatusMensagemContato").style.display="flex";
+            } else if (x === "0") {
+                document.getElementById("popupStatusMensagemContato").style.display="flex";
+                document.getElementById('popupStatusMensagemContatoIcon').innerHTML = "error";
+                document.getElementById('popupStatusMensagemContatoText').innerHTML = "Houve um erro ao enviar a mensagem.<br>Favor revisar o preechimento dos campos e tentar novamente.<br><br>Caso prefira, contate-nos no email: <a href='mailto:contato@rapia.com.br'>contato@rapia.com.br</a>";
+            } else {
+                document.getElementById("popupStatusMensagemContato").style.display="none";
+            }
+        </script>
 
 
 
