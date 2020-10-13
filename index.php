@@ -563,6 +563,8 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                             <i id="popupStatusMensagemContatoIcon" class="material-icons contatoformstatusmensagemcontatoicon">done</i>
                             <p id="popupStatusMensagemContatoText">
                                 Mensagem enviada com sucesso!
+                                <br>
+                                Entraremos em contato o mais breve possível, dentro das próximas 48h.
                             </p>
                         </div>
                     </form>

@@ -1,6 +1,6 @@
 <?php
 
-$to = "costa.joaomf@gmail.com";
+$to = "contato@rapia.com.br";
 $nome = $_POST["nome"];
 $email = $_POST["email"];
 $telefone = $_POST["telefone"];
