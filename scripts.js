@@ -50,10 +50,28 @@ function validarContactForm() {
       return;
     }
     if (email.value == "") {
-      alert("E-mail não informado");
+      alert("Email não informado");
       email.focus();
       return;
+    } else {
+        usuario = email.value.substring(0, email.value.indexOf("@"));
+        dominio = email.value.substring(email.value.indexOf("@")+ 1, email.value.length);
+        if ((usuario.length >=1) &&
+            (dominio.length >=3) &&
+            (usuario.search("@")==-1) &&
+            (dominio.search("@")==-1) &&
+            (usuario.search(" ")==-1) &&
+            (dominio.search(" ")==-1) &&
+            (dominio.search(".")!=-1) &&
+            (dominio.indexOf(".") >=1)&&
+            (dominio.lastIndexOf(".") < dominio.length - 1)) {
+        } else {
+        alert("Email inválido");
+        email.focus();
+        return;
+        }
     }
+
     if (telefone.value == "") {
       alert("Telefone não informado");
       telefone.focus();
