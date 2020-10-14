@@ -117,33 +117,18 @@ header{
     max-height: 4.125rem;
 }
 
-.navmenuicon{
+.topnav-menu-icon{
     display: none;
 }
 
 /* header abaixo de 1049px de largura */
 @media screen and (max-width: 1049px) {
-    /*header{
-        display: flex;
-        height: 5rem;
-        background-color:white;
-        justify-content: space-between;
-        padding: 1.875rem;
-        align-items: center;
-        box-shadow: 0rem 0.125rem    0.25rem    #888888;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        transition: top 0.3s;
-        z-index: 100;
-    }*/
-    
+  
     .nav{
         display: none;
     }
 
     .nav ul{
-        /*display: flex;*/
         background-color: white;
         flex-direction: column;
         position: absolute;
@@ -152,26 +137,10 @@ header{
     }
     
     .nav ul li a{
-        /*margin-left: 0.9375rem;
-        display: block;
-        padding: 0.625rem;
-        text-decoration: none;
-        color: #003030;
-        font-size: 0.875rem;
-        font-weight: bold;
-        letter-spacing: 0.05rem;*/
         padding: 1rem;
     }
     
-    /*.nav ul li a:hover {
-        color: #006019;
-        text-decoration: none;
-        transition: all 0.2s;
-        transform: scale(1.1);
-    }*/
-    
     .headerlogo{
-        /*max-height: 4.125rem;*/
         max-width: 80%;
     }
     
@@ -461,11 +430,6 @@ h1{
     justify-content: center;
     align-items: top;
     display: block;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 2.5rem;
-    row-gap: 2.5rem;  40px*/
 }
 
 .vantagensmainrow{
@@ -491,11 +455,6 @@ h1{
 
 .vantagensmaincardimg img{
     width: 100%;
-
-    /*
-    height: 7.875rem;
-    margin: 3.125rem;
-    */
 }
 
 .vantagensmaincardtext{
@@ -912,91 +871,28 @@ h1{
     }
     
     /*------------------ home ---------------------------------------------------------------------------------*/
-    
-    
-    /*.homebackimage{
-        background-image: url(../img/homerobothand.png);
-        background-color: #00A285;
-        min-height: 47.8125rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-    
-    .homebackfilter{
-        background: linear-gradient(0deg, rgba(1,45,37,1) 0%, rgba(0,162,133,0.9) 100%);
-        min-height: 47.8125rem;
-        margin: 0 auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-    
-    .homecontent{
-        padding-top: 10rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        padding-bottom: 5rem;
-        max-width: 86.25rem;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }*/
-    
+        
     h1{
         font-size: 3.5rem;
-        /*letter-spacing: 0.05rem;
-        color: white;
-        font-weight: 600;
-        text-align: center;*/
     }
     
     .hometext{
         margin-top: 1.125rem;
         margin-bottom: 2.375rem;
-        /*font-size: 1.5rem;
-        letter-spacing: 0.05rem;
-        color: white;
-        text-align: center;
-        line-height: 2.5rem;*/
     }
     
     /*------------------ nossas solucoes ---------------------------------------------------------------------------------*/
     .nossassolucoesbackimage{
-        /*background-image: url(../img/nossassolucoesquadradoback.png);
-        background-color: white;
-        min-height: 82.0625rem;
-        background-position: -4.5625rem    -10rem;*/
         background-repeat: repeat-y;
-        /*background-size: cover;
-        padding-top: 5rem;*/
     }
-    
-    /*.nossassolucoescontent{
-        padding-top: 1.875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        max-width: 86.25rem;
-        margin: 0 auto;
-    }*/
     
     /*------------------ nossas solucoes / intro */
     .nossassolucoesintro{
-        /*width: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: top;*/
         flex-direction: column-reverse;
     }
     
     .nossassolucoesintrotext{
         width: 100%;
-        /*color: #333333 ;*/
         margin-left: 0rem;
         padding-right: 0rem;
         margin-top: 1.5rem;
@@ -1004,78 +900,13 @@ h1{
     
     .nossassolucoesintroimg{
         width: 100%;
-        /*color: #333333 ;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;*/
     }
-    
-    /*.nossassolucoesintroimg img{
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 1.25rem;
-    }*/
-    
+     
     /*------------------ nossas solucoes / cards */
-    /*.nossassolucoesmain{
-        width: 100%;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: top;
-        padding-bottom: 3.125rem;
-        padding-top: 3.75rem;
-    }*/
-    
-    /*.nossassolucoesmaintitle{
-        width: 100%;
-        color: #333333 ;
-        margin-left: 0rem;
-        padding-right: 5rem;
-    }
-    
-    .nossassolucoesmaintitle p{
-        font-weight: bold;
-        font-size: 1.25rem;
-    }
-    
-    .nossassolucoesmaincards {
-        position: relative;
-        display: flex;
-        width: 100%;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        transition: all 0.2s;
-        transform: scale(0.98);
-        will-change: transform;
-        user-select: none;
-        cursor: pointer;
-        margin-top: 3.125rem;
-        scrollbar-width: none
-    }
-    
-    .nossassolucoesmaincards::-webkit-scrollbar {    
-        display: none;
-    }
-    
-      .nossassolucoesmaincards.active {
-        background: rgba(255,255,255,0.3);
-        cursor: grabbing;
-        cursor: -webkit-grabbing;
-        transform: scale(1);
-      }*/
-    
-    
+      
       .nossassolucoesmaincardscard{
-        /*min-width: 0rem;*/
         min-height: 26.25rem;
         min-width: 95%;
-        /*color: #333333;
-        margin-right: 4.375rem;
-        position: relative;
-        white-space: normal;
-        display: flex;
-        flex-direction: column;*/
       }
     
     .nossassolucoesmaincardscardimg{
@@ -1084,105 +915,17 @@ h1{
         text-align: center;
     }
     
-    /*.nossassolucoesmaincardscardimg img{
-        max-height: inherit;
-    }
-    
-    .nossassolucoesmaincardscard h4{
-        font-size: 1.125rem;
-        font-weight: bold;
-        margin-top: 2.5rem;
-        margin-bottom: 1.25rem;
-        min-height: 2.5rem;
-    }
-    
-    .nossassolucoesmaincardscard p{
-        font-size: 1rem;
-        text-align: justify;
-        margin-bottom: 4.375rem;
-    }
-    
-    .nossassolucoesmaincardscard button{
-        background: #11A493;
-        width: 80%;
-        height: 2.5rem;
-        font-size: 1.125rem;
-        line-height: 2rem;
-        position: absolute;
-        bottom: 0.625rem;
-        left: 50%;
-        transform: translate(-50%);
-        border: none;
-        outline: none;
-    }
-    
-    .nossassolucoesmaincardscardvantagens {
-        background-color: #003030;
-        border-radius: 0.3125rem;
-        padding: 0.625rem;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        position: absolute;
-        bottom: 3.75rem;
-        display: none;
-    }
-    
-    .nossassolucoesmaincardscardvantagens.selected {
-        display: block;
-    }
-    
-    .nossassolucoesmaincardscardvantagens p{
-        text-align: left;
-        margin-bottom: 0rem;
-        font-size: 0.75rem;
-        letter-spacing: 0.05rem;
-        color: white;
-    }*/
-    
     /*------------------ vantagens ---------------------------------------------------------------------------------*/
-    /*.vantagensbackground{
-        padding-bottom: 5rem;
-        background-color: #E6E6E6;
-        padding-top: 5rem;
-    }
-    
-    .vantagenscontent{
-        padding-top: 1.875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        max-width: 86.25rem;
-        margin: 0 auto;
-    }
-    
-    .vantagensmain{
-        width: 100%;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: top;
-        display: block;
-        /*display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 2.5rem;
-        row-gap: 2.5rem;  40px
-    }*/
-    
+        
     .vantagensmainrow{
-        /*display: flex;
-        justify-content: center;*/
         flex-direction: column;
     }
     
     .vantagensmaincard{
-        /*background-color: white;*/
         width: 100%;
         max-height: 100%;
         flex-direction: column;
-        /*color: black;
-        display: flex;*/
         margin-left: 0px;
-        /*margin-bottom: 50px;*/
         padding: 20px;
     }
     
@@ -1196,11 +939,6 @@ h1{
     
     .vantagensmaincardimg img{
         width: 30%;
-    
-        /*
-        height: 7.875rem;
-        margin: 3.125rem;
-        */
     }
     
     .vantagensmaincardtext{
@@ -1210,180 +948,42 @@ h1{
         align-items: center;
     }
     
-    /*.vantagensmaincardtext h4{
-        font-size: 1.125rem;
-        font-weight: bold;
-        margin-bottom: 1.25rem;
-    }*/
-    
     .vantagensmaincardtext p{
-        /*font-size: 1rem;*/
         text-align: justify;
     }
     
     /*------------------ Robos Trabalhando ---------------------------------------------------------------------------------*/
     .robostrabalhandobackimage{
-        /*background-image: url(../img/robostrabalhandorobotdesk.png);
-        background-color: white;*/
         min-height: 0rem;
-        /*background-repeat: no-repeat;
-        background-size: cover;*/
     }
     
     .robostrabalhandobackfilter{
-        /*background: rgba(0, 162, 133, 0.72);*/
         min-height: 0rem;
-        /*margin: 0 auto;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        padding-top: 5rem;*/
     }
-    
-    /*.robostrabalhandocontent{
-        padding-top: 1.875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        padding-bottom: 5rem;
-        max-width: 86.25rem;
-        margin: 0 auto;
-    }
-    
-    .robostrabalhandocontent h2{
-        color: white;
-    }
-    
-    .robostrabalhandocontent h3{
-        color: #FFBCAB;
-    }
-    
-    .robostrabalhandomain{
-        max-height: 27rem;
-        max-width: 48rem;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .robostrabalhandomain img{
-        max-width: 100%;
-    }*/
     
     /*------------------ Sobre Nos ---------------------------------------------------------------------------------*/
-    /*.sobrenosbackground{
-        padding-bottom: 5rem;
-        background-color: white;
-        padding-top: 5rem;
-    }
-    
-    .sobrenoscontent{
-        padding-top: 1.875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        max-width: 86.25rem;
-        margin: 0 auto;
-    }
-    
-    .sobrenosmain{
-        width: 100%;
-        margin: 0 auto;
-    }*/
-    
+        
     .sobrenosmainrow1{
-        /*display: flex;
-        justify-content: center;
-        margin-bottom: 1.25rem;*/
         flex-direction: column-reverse;
     }
     
     .sobrenosmaincardnosomos{
-        /*display: flex;
-        justify-self: center;
-        align-self: center;*/
         flex-direction: column;
-    }
-    
-    
-    /*.sobrenosmaincardnosomos h4{
-        padding-top: 1.25rem;
-        min-width: 10rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #003030;
-
-    }
-    
-    .sobrenosmaincardnosomoscontent{
-        background-color: #095047;
-        max-width: 23.75rem;
-        min-height: 26.25rem;
-        letter-spacing: 0.05rem;
-        color: white;
-        line-height: 1.75rem;
-        padding: 1.25rem;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        align-self: center;
-    }
-    
-    .sobrenosmaincardnosomoscontent img{
-        max-width: 7.875rem;
-        margin: 0 auto;
-    }*/
-    
+    }    
     
     .sobrenosmaincardnosomoscontent p{
-        /*margin-top: 1.875rem;
-        font-size: 1rem;*/
         text-align: justify;
     }
     
     
     .sobrenosmainimg{
         width: 100%;
-        /*display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;*/
         margin-left: 0rem;
         margin-top: 1.25rem;
         margin-bottom: 1.25rem;
     }
     
-    /*.sobrenosmainimg img{
-        max-width: 100%;
-        max-height: 100%;
-    }*/
-    
-    /*.sobrenosmainrow2{
-        padding-bottom: 1.25rem;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 2.5rem;
-    }
-    
-    .sobrenosmaincardnossamissao h4{
-        padding-top: 1.25rem;
-        min-width: 10rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #003030;
-    }*/
-    
     .sobrenosmaincardnossamissaocontent{
-        /*background-color: #06675C;
-        max-width: 68.375rem;
-        min-height: 9.375rem;
-        letter-spacing: 0.05rem;
-        color: white;
-        line-height: 1.75rem;
-        padding: 1.25rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;*/
         flex-direction: column;
     }
     
@@ -1395,167 +995,33 @@ h1{
     
     
     .sobrenosmaincardnossamissaocontent p{
-        /*font-size: 1rem;*/
         margin-top: 1.875rem;
         text-align: justify;
     }
     
     /*------------------ Contato ---------------------------------------------------------------------------------*/
     
-    /*               ver contato apagado transparente                           */
-    /*.contatobackground{
-        background-color: #11A493;
-        min-height: 53.5625rem;
-        position: relative;
-    }
-    
-    .contatoheader{
-        background-image: url(../img/contactdesktop.png);
-        background-color: #11A493;
-        min-height: 22.5rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .contatoheader h2{
-        color: white;
-    }*/
-    
     .contatocontent{
-        /*background-color: #007364;*/
         border-radius: 0 0 0 0;
-        /*padding-top: 1.875rem;
-        padding-left: 3.125rem;
-        padding-right: 3.125rem;*/
-        min-width: 100%;
-        /*min-height: 37.5rem;
-        margin: 0 auto;
-        position: absolute;
-        bottom: 0rem;
-        left: 50%;
-        transform: translate(-50%,0px);*/
-    
+        min-width: 100%;   
     }
-    
-    /*.contatoformtext h4{
-        color: white;
-        font-size: 1.125rem;
-    }
-    
-    .contatoformtext p{
-        color: white;
-        font-size: 1rem;
-        padding-bottom: 1.25rem;
-    }
-    
-    .contatoformcampo{
-        padding-top: 1.25rem;
-    }
-    
-    .contatoformbutton{
-        padding-top: 2.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .contatoformbutton button{
-        width: 12.5rem;
-        height: 2.5rem;
-        font-size: 1.125rem;
-        line-height: 1.5rem;
-    }*/
     
     .contatoformstatusmensagemcontato{
-        /*background-color: #E76F51;
-        min-height: 12.5rem;*/
         min-width: 80%;
-        /*position: absolute;
-        padding-top: 1.25rem;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-100%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0.3125rem;*/
     }
-    
-    /*.contatoformstatusmensagemcontato div{
-        max-width: 2.5rem;
-        max-height: 2.5rem;
-        position: absolute;
-        top: 0rem;
-        right: 0rem;
-        display: inline-block;
-        text-align: end;
-        padding: 0.3125rem;
-    }
-    
-    .contatoformstatusmensagemcontato div > a{
-        color: white;
-    }
-    
-    .contatoformstatusmensagemcontato div > a:hover{
-        color: rgb(224, 224, 224);
-    }
-    
-    .contatoformstatusmensagemcontatoicon{
-        color: white;
-        font-size: 3rem;
-    }
-    
-    .contatoformstatusmensagemcontato p{
-        color: white;
-        font-size: 0.875rem;
-        padding: 1.25rem;
-    }
-    
-    .contatoformstatusmensagemcontato p > a{
-        color: white;
-    }*/
     
     /*------------------ Footer ---------------------------------------------------------------------------------*/
-    
-    /*.footerbackground{
-        padding-bottom: 1.25rem;
-        background-color: #003030;
-        padding-top: 5rem;
-    }
-    
-    .footercontent{
-        padding-top: 1.875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        max-width: 86.25rem;
-        margin: 0 auto;
-    }*/
-    
+        
     .footermain{
         min-height: 0rem;
-        /*width: 100%;
-        margin: 0 auto;
-        justify-content: center;
-        display: flex;*/
         flex-direction: column;
         align-items: center;
     }
     
     .footermainlogo{
-        /*display: flex;
-        justify-content: flex-end;
-        align-items: center;*/
         padding-right: 0;
         padding-bottom: 25px;
         max-width: 70%;
-        
-        
     }
 
     .footermainlogo img{
@@ -1563,68 +1029,15 @@ h1{
     }
     
     .footermaincontato{
-        /*display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        color: white;*/
         padding-left: 0rem;
         padding-bottom: 25px;
     }
     
-    /*.footermaincontatoemail{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footermaincontatofone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footermaincontatotext{
-        padding-left: 0.9375rem;
-    }
-    
-    .footermaincontato div > a > img{
-        padding: 0.9375rem;
-    }*/
-    
     .footerend{
-        /*max-width: 56.875rem;
-        border-top-style: solid;
-        border-top-color: white;*/
         border-top-width: 0.03rem;
-        /*margin: 0 auto;
-        display: flex;
-        justify-content: center;*/
     }
     
     .footerend p{
-        /*color: white;*/
         font-size: 0.75rem;
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

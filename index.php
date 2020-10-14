@@ -1,36 +1,25 @@
 <?php
-
-    //include 'contact_process.php';
     $statusmensagemcontato = $_GET['stsmsg'];
-    //<?php echo $statusmensagemcontato; *****?*>
 ?>
 
-
-<!--
-
-CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCRIPT....
-
--->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!--<meta http-equiv="refresh" content="3; URL=file:///C:/zPRINCIPAL/_RAPIA/DEV_PROJETOS/RAPIA_site/index.html">-->
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="Robôs para seu negócio!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
         <title>Rapia - Automação do Trabalho Digital</title>
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="scripts.js"></script>  
     </head>
-
+    <!-- body ----------------------------------------------------------------------------------------->
     <body>
+        <!-- header ------------------------------------------------------------------------------------>
         <header id="header">
             <a href="https://rapia.com.br/">
                 <img src="img/headerlogo.png" class="headerlogo">
@@ -55,15 +44,12 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </ul>
             </nav>
             <div class="navmenuicon">
-                <a href="javascript:void(0);" class="icon" onclick="showNavMenu()">
+                <a href="" class="icon" onclick="showNavMenu()">
                     <i class="material-icons">menu</i>
                 </a>
             </div>
         </header>
- 
-
-
-
+        <!-- home ------------------------------------------------------------------------------------>
         <section id="home" class="section">
             <div class="homebackimage">
                 <div class="homebackfilter">
@@ -83,10 +69,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </div>
             </div>
         </section>
-
-
-
-
+        <!-- nossas solucoes ------------------------------------------------------------------------------------>
         <section id="nossassolucoes" class="section">
             <div class="nossassolucoesbackimage">
                 <div class="nossassolucoescontent">
@@ -97,6 +80,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                         O que nossos <strong>robôs</strong>
                          podem fazer
                     </h2>
+                    <!-- intro ------------------------------------------------------------------------------------>
                     <div class="nossassolucoesintro">
                         <div class="nossassolucoesintrotext">
                             <p>
@@ -126,12 +110,8 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                                 Estes são alguns exemplos de atividades executadas por nossos robôs:
                             </p>
                         </div>
+                        <!-- cards ------------------------------------------------------------------------------------>
                         <div class="nossassolucoesmaincards">
-
-
-
-
-
                             <div class="nossassolucoesmaincardscard">
                                 <div class="nossassolucoesmaincardscardimg">
                                     <img src="img/nossassolucoesemailicon.png">
@@ -352,9 +332,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </div>
             </div>
         </section>
-
-
-
+        <!-- vantagens ------------------------------------------------------------------------------------>
         <section id="vantagens" class="section">
             <div class="vantagensbackground">
                 <div class="vantagenscontent">
@@ -429,9 +407,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </div>
             </div>
         </section>
-
-
-
+        <!-- robos trabalhando ------------------------------------------------------------------------------------>
         <section id="robostrabalhando" class="section">
             <div class="robostrabalhandobackimage">
                 <div class="robostrabalhandobackfilter">
@@ -450,25 +426,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- sobre nos ------------------------------------------------------------------------------------>
         <section id="sobrenos" class="section">
             <div class="sobrenosbackground">
                 <div class="sobrenoscontent">
@@ -495,7 +453,6 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                                         vantagem competitiva para empresas.
                                     </p>
                                 </div>
-                                
                             </div>
                             <div class="sobrenosmainimg">
                                 <img src="img/sobrenosrobotnote.png">
@@ -516,18 +473,13 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                                         de produtividade e qualidade.  
                                     </p>
                                 </div>
-                                
                             </div>
                         </div>
-                        
-
                     </div>
                 </div>
             </div>
         </section>
-
-
-
+        <!-- contato ------------------------------------------------------------------------------------>
         <section id="contato" class="section">
             <div class="contatobackground">
                 <div class="contatoheader">
@@ -536,7 +488,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                     </h2>
                 </div> 
                 <div class="contatocontent">
-                    <form class="form-contact contact_form" name="contactForm" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="form-contact contact_form" name="contactForm" action="./php/contact_process.php" method="post" id="contactForm" novalidate="novalidate">
                         <div class="contatoformtext">
                             <h4>
                                 Quer saber mais ?
@@ -580,20 +532,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </div>
             </div>            
         </section>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- footer ------------------------------------------------------------------------------------>
         <footer id="footer" class="section">
             <div class="footerbackground">
                 <div class="footercontent">
@@ -627,9 +566,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 </div>
             </div>
         </footer>
-
-
-
+        <!-- scripts ------------------------------------------------------------------------------------>
         <script type="text/javascript">
             // slider cards nossas solucoes
             const slider = document.querySelector('.nossassolucoesmaincards');
@@ -660,9 +597,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 console.log(walk);
             });
         </script>
-
-
-
+                
         <script type="text/javascript">
             // Define popup de retorno da mensagem de contato enviado
             var x = "<?php echo $statusmensagemcontato;?>";
@@ -676,8 +611,6 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                 document.getElementById("popupStatusMensagemContato").style.display="none";
             }
         </script>
-
-
-
+        <!-- fim ------------------------------------------------------------------------------------>
     </body>
 </html>

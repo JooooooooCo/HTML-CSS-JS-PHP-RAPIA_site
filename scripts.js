@@ -10,18 +10,21 @@ function getWidth() {
   }
 
 // Navbar oculta ao rolar a pagina para mobile
-if (getWidth() < 577){
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("header").style.top = "0";
-        document.getElementById("nav").style.display = "none";
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    if (getWidth() < 577){
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("header").style.top = "0";
+            document.getElementById("nav").style.display = "none";
+        } else {
+            document.getElementById("header").style.top = "-100%";
+            document.getElementById("nav").style.display = "none";
+        }
+        prevScrollpos = currentScrollPos;
     } else {
-        document.getElementById("header").style.top = "-100%";
-        document.getElementById("nav").style.display = "none";
-    }
-    prevScrollpos = currentScrollPos;
+        document.getElementById("header").style.top = "0";
+        document.getElementById("nav").style.display = "block";
     }
 }
 

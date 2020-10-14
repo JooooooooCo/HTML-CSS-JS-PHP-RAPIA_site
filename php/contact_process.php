@@ -26,6 +26,6 @@ if (@mail($to, $subject, $message, $headers))
 	$statusmensagemcontato = "0";
 	//erro
 }
-header("Location: index.php?stsmsg=$statusmensagemcontato#contato");
+header("Location: ../index.php?stsmsg=$statusmensagemcontato#contato");
 
 ?>
