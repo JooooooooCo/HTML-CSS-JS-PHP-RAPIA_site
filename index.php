@@ -31,11 +31,11 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <a href="https://rapia.com.br/">
                 <img src="img/headerlogo.png" class="headerlogo">
             </a>
-            <nav class="nav">
+            <nav id="nav" class="nav">
                 <ul>
                     <li>
                         <a href="#nossassolucoes">NOSSAS SOLUÇÕES</a>
@@ -54,8 +54,8 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                     </li>
                 </ul>
             </nav>
-            <div id="topnavMenuIcon" class="topnav-menu-icon">
-                <a href="javascript:void(0);" class="icon" onclick="respNavbar()">
+            <div class="navmenuicon">
+                <a href="javascript:void(0);" class="icon" onclick="showNavMenu()">
                     <i class="material-icons">menu</i>
                 </a>
             </div>

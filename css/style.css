@@ -12,7 +12,7 @@ body, ul, li,p, button{
     font-family: Roboto, sans-serif;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     :root{
         font-size: 16px;
     }
@@ -41,12 +41,6 @@ body, ul, li,p, button{
         font-size: 16px;
     }
 }
-
-/*------------------ Desktop ---------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------*/
 
 a{
     text-decoration: none;
@@ -80,6 +74,7 @@ button{
 
 /*------------------ header ---------------------------------------------------------------------------------*/
 
+/* header padrão acima de 1050px de largura */
 header{
     display: flex;
     height: 5rem;
@@ -108,15 +103,98 @@ header{
     font-size: 0.875rem;
     font-weight: bold;
     letter-spacing: 0.05rem;
+    
+}
+
+.nav ul li a:hover {
+    color: #006019;
+    text-decoration: none;
+    transition: all 0.2s;
+    transform: scale(1.1);
 }
 
 .headerlogo{
-    height: 4.125rem;
+    max-height: 4.125rem;
 }
 
 .topnav-menu-icon{
     display: none;
 }
+
+/* header abaixo de 1049px de largura */
+@media screen and (max-width: 1049px) {
+    /*header{
+        display: flex;
+        height: 5rem;
+        background-color:white;
+        justify-content: space-between;
+        padding: 1.875rem;
+        align-items: center;
+        box-shadow: 0rem 0.125rem    0.25rem    #888888;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: top 0.3s;
+        z-index: 100;
+    }*/
+    
+    .nav{
+        display: none;
+    }
+
+    .nav ul{
+        /*display: flex;*/
+        background-color: white;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: 0px;
+    }
+    
+    .nav ul li a{
+        /*margin-left: 0.9375rem;
+        display: block;
+        padding: 0.625rem;
+        text-decoration: none;
+        color: #003030;
+        font-size: 0.875rem;
+        font-weight: bold;
+        letter-spacing: 0.05rem;*/
+        padding: 1rem;
+    }
+    
+    /*.nav ul li a:hover {
+        color: #006019;
+        text-decoration: none;
+        transition: all 0.2s;
+        transform: scale(1.1);
+    }*/
+    
+    .headerlogo{
+        /*max-height: 4.125rem;*/
+        max-width: 80%;
+    }
+    
+    .navmenuicon{
+        max-width: 20%;
+        display: block;
+    }
+
+    .navmenuicon > a > i{
+        color: #003030;
+    }
+}
+
+/*------------------ Desktop ---------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
 
 /*------------------ body ---------------------------------------------------------------------------------*/
 
@@ -806,80 +884,13 @@ h1{
 /*------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 576px) {
-
-
-    /*a{
-        text-decoration: none;
-    }
-    
-    p{
-        font-family: Roboto, sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-        
-    }
-    
-    button{
-        width: 13.85rem;
-        height: 4.125rem;
-        background: #E76F51;
-        border-radius: 0.5rem;
-        color: white;
-        font-weight: 600;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.5rem;
-        letter-spacing: 0.05rem;
-        line-height: 3.75rem;
-        border: none;
-        outline: none;
-    }*/
-    
-    /*------------------ header ---------------------------------------------------------------------------------*/
-    
-    /*header{
-        display: flex;
-        height: 5rem;
-        background-color:white;
-        justify-content: space-between;
-        padding: 1.875rem;
-        align-items: center;
-        box-shadow: 0rem 0.125rem    0.25rem    #888888;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        transition: top 0.3s;
-        z-index: 100;
-    }
-    
-    .nav ul{
-        display: flex;
-    }
-    
-    .nav ul li a{
-        margin-left: 0.9375rem;
-        display: block;
-        padding: 0.625rem;
-        text-decoration: none;
-        color: #003030;
-        font-size: 0.875rem;
-        font-weight: bold;
-        letter-spacing: 0.05rem;
-    }
-    
-    .headerlogo{
-        height: 4.125rem;
-    }
-    
-    .topnav-menu-icon{
-        display: none;
-    }*/
-    
+@media screen and (max-width: 575px) {
+   
     /*------------------ body ---------------------------------------------------------------------------------*/
     
     h3{

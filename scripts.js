@@ -16,35 +16,23 @@ if (getWidth() < 577){
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("header").style.top = "0";
+        document.getElementById("nav").style.display = "none";
     } else {
         document.getElementById("header").style.top = "-100%";
+        document.getElementById("nav").style.display = "none";
     }
     prevScrollpos = currentScrollPos;
     }
 }
 
-
-
-
-/*
 // Navbar responsiva - oculta menu para mobile topnavLogo
-function respNavbar() {
-    var x = document.getElementById("topnavMenuExtended");
-    if (x.className === "topnav-menu-extended") {
-    x.className += " responsive";
+function showNavMenu() {
+    if (document.getElementById("nav").style.display === "none") {
+        document.getElementById("nav").style.display = "block";
     } else {
-    x.className = "topnav-menu-extended";
-    }
-
-    var x = document.getElementById("topnavLogo");
-    if (x.className === "topnav-logo") {
-    x.className += " responsive";
-    } else {
-    x.className = "topnav-logo";
+        document.getElementById("nav").style.display = "none";
     }
 }
-*/
-
 
 
 // Status Mensagem Contato - fechar popup
@@ -94,8 +82,6 @@ function validarContactForm() {
     }
     contactForm.submit();
   }
-
-
 
 // slider cards nossas solucoes -> vantagens mostrar e ocultar
 function cardVantagensClick(i) {
