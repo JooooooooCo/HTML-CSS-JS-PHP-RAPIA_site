@@ -32,7 +32,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
 
     <body>
         <header>
-            <a href="#home">
+            <a href="https://rapia.com.br/">
                 <img src="img/headerlogo.png" class="headerlogo">
             </a>
             <nav class="nav">
@@ -74,7 +74,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                         </h1>
                         <p class="hometext">
                             Deixe o trabalho <strong>repetitivo</strong> com nossos <strong>robôs</strong> e
-                            </br> sua <strong>equipe</strong> dedicada ao crescimento do seu <strong>negócio</strong>.
+                             sua <strong>equipe</strong> dedicada ao crescimento do seu <strong>negócio</strong>.
                         </p>
                         <Button type="button" onclick="location.href='#contato';">
                             Saiba Mais
@@ -95,7 +95,7 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                     </h3>
                     <h2>
                         O que nossos <strong>robôs</strong>
-                        </br>podem fazer
+                         podem fazer
                     </h2>
                     <div class="nossassolucoesintro">
                         <div class="nossassolucoesintrotext">
@@ -365,52 +365,64 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                         Porque somos a <strong>escolha certa</strong>
                     </h2>
                     <div class="vantagensmain">
-                        <div class="vantagensmaincard">
-                            <img src="img/vantagensbaixoinvestimentoicon.png">
-                            <div class="vantagensmaincardtext">
-                                <h4>
-                                    Baixo Investimento
-                                </h4>
-                                <p>
-                                    Sem necessidade de assinatura de licenças com inúmeras restrições, 
-                                    como as encontradas em produtos dos grandes fornecedores. 
-                                </p>
+                        <div class="vantagensmainrow">
+                            <div class="vantagensmaincard">
+                                <div class="vantagensmaincardimg">
+                                    <img src="img/vantagensbaixoinvestimentoicon.png">
+                                </div>
+                                <div class="vantagensmaincardtext">
+                                    <h4>
+                                        Baixo Investimento
+                                    </h4>
+                                    <p>
+                                        Sem necessidade de assinatura de licenças com inúmeras restrições, 
+                                        como as encontradas em produtos dos grandes fornecedores. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="vantagensmaincard">
+                                <div class="vantagensmaincardimg">
+                                    <img src="img/vantagensrapidezentregaicon.png">
+                                </div>                                
+                                <div class="vantagensmaincardtext">
+                                    <h4>
+                                        Rapidez na entrega dos robôs
+                                    </h4>
+                                    <p>
+                                        Desenvolvimento e implantação dos robôs em curto espaço de tempo, 
+                                        de forma simples e ágil. 
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="vantagensmaincard">
-                            <img src="img/vantagensrapidezentregaicon.png">
-                            <div class="vantagensmaincardtext">
-                                <h4>
-                                    Rapidez na entrega dos robôs
-                                </h4>
-                                <p>
-                                    Desenvolvimento e implantação dos robôs em curto espaço de tempo, 
-                                    de forma simples e ágil. 
-                                </p>
+                        <div class="vantagensmainrow">
+                            <div class="vantagensmaincard">
+                                <div class="vantagensmaincardimg">
+                                    <img src="img/vantagensaumentoprodutividadeicon.png">
+                                </div>                                
+                                <div class="vantagensmaincardtext">
+                                    <h4>
+                                        Aumento da produtividade
+                                    </h4>
+                                    <p>
+                                        Seus robôs podem trabalhar 24h por dia, durante todos os dias do ano, 
+                                        sem pausas por férias ou feriados. 
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="vantagensmaincard">
-                            <img src="img/vantagensaumentoprodutividadeicon.png">
-                            <div class="vantagensmaincardtext">
-                                <h4>
-                                    Aumento da produtividade
-                                </h4>
-                                <p>
-                                    Seus robôs podem trabalhar 24h por dia, durante todos os dias do ano, 
-                                    sem pausas por férias ou feriados. 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="vantagensmaincard">
-                            <img src="img/vantagensreducaoerrosicon.png">
-                            <div class="vantagensmaincardtext">
-                                <h4>
-                                    Redução de erros
-                                </h4>
-                                <p>
-                                    Robôs bem projetados e desenvolvidos resultam em confiabilidade na 
-                                    manipulação de dados, sem margem para erros e retrabalho.
-                                </p>
+                            <div class="vantagensmaincard">
+                                <div class="vantagensmaincardimg">
+                                    <img src="img/vantagensreducaoerrosicon.png">
+                                </div>                                
+                                <div class="vantagensmaincardtext">
+                                    <h4>
+                                        Redução de erros
+                                    </h4>
+                                    <p>
+                                        Robôs bem projetados e desenvolvidos resultam em confiabilidade na 
+                                        manipulação de dados, sem margem para erros e retrabalho.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -429,13 +441,10 @@ CRIAR NOVO MENU PARA O MOBILE E USAR DISPLAY BLOCK E NONE COM A FUNÇÃO JAVASCR
                         </h3>
                         <h2>
                             Veja o <strong>poder</strong> de
-                            <br>nossos robôs em <strong>ação</strong>                        
+                             nossos robôs em <strong>ação</strong>                        
                         </h2>
                         <div class="robostrabalhandomain">
-                            <p>
-                                EM BREVE
-                            </p>
-                            <img src="img/robostrabalhandoplayicon.png">                            
+                            <img src="img/robostrabalhandoplayer.png">                            
                         </div>
                     </div>
                 </div>

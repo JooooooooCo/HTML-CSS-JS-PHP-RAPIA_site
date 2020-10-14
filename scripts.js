@@ -1,17 +1,32 @@
-/*
-// Navbar oculta ao rolar a pagina
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-if (prevScrollpos > currentScrollPos) {
-    document.getElementById("topnavMenuExtended").style.top = "0";
-} else {
-    document.getElementById("topnavMenuExtended").style.top = "-10rem";
-}
-prevScrollpos = currentScrollPos;
-}
-*/
+// Pega width da tela do navegador
+function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+  }
 
+// Navbar oculta ao rolar a pagina para mobile
+if (getWidth() < 577){
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+    } else {
+        document.getElementById("header").style.top = "-100%";
+    }
+    prevScrollpos = currentScrollPos;
+    }
+}
+
+
+
+
+/*
 // Navbar responsiva - oculta menu para mobile topnavLogo
 function respNavbar() {
     var x = document.getElementById("topnavMenuExtended");
@@ -28,7 +43,7 @@ function respNavbar() {
     x.className = "topnav-logo";
     }
 }
-
+*/
 
 
 
