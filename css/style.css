@@ -849,10 +849,18 @@ h1{
     align-items: center;
 }
 
+.footermaincontatoemail a{
+    color: white;
+}
+
 .footermaincontatofone{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footermaincontatofone a{
+    color: white;
 }
 
 .footermaincontatotext{
@@ -861,6 +869,11 @@ h1{
 
 .footermaincontato div > a > img{
     padding: 0.9375rem;
+}
+
+.footermaincontato div > a > img:hover{
+    transition: all 0.2s;
+    transform: translate(0rem, -0.2rem);
 }
 
 .footerend{
