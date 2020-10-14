@@ -30,7 +30,7 @@ window.onscroll = function() {
 
 // Navbar responsiva - oculta menu para mobile topnavLogo
 function showNavMenu() {
-    if (document.getElementById("nav").style.display === "none") {
+    if (document.getElementById("nav").style.display != "block") {
         document.getElementById("nav").style.display = "block";
     } else {
         document.getElementById("nav").style.display = "none";

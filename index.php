@@ -44,7 +44,7 @@
                 </ul>
             </nav>
             <div class="navmenuicon">
-                <a href="" class="icon" onclick="showNavMenu()">
+                <a href="JavaScript:void(0);" class="icon" onclick="showNavMenu()">
                     <i class="material-icons">menu</i>
                 </a>
             </div>
@@ -56,11 +56,11 @@
                     <div class="homecontent">
                         <h1>
                             Transforme seu Negócio
-                            </br>com Robôs Digitais
+                            <br>com Robôs Digitais
                         </h1>
                         <p class="hometext">
                             Deixe o trabalho <strong>repetitivo</strong> com nossos <strong>robôs</strong> e
-                             sua <strong>equipe</strong> dedicada ao crescimento do seu <strong>negócio</strong>.
+                            <br>sua <strong>equipe</strong> dedicada ao crescimento do seu <strong>negócio</strong>.
                         </p>
                         <Button type="button" onclick="location.href='#contato';">
                             Saiba Mais
