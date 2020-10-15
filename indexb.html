@@ -85,7 +85,7 @@
                     <div class="nossassolucoesintro">
                         <div class="nossassolucoesintrotext">
                             <p>
-                                Criamos robôs digitais para executar as mais variadas tarefas do dia a dia do seu negócio,
+                                Desenvolvemos robôs digitais para executar as mais variadas tarefas do dia a dia do seu negócio,
                                 de manipulação de arquivos digitais a processamento de contas a pagar.
                                 <br>
                                 <br>
