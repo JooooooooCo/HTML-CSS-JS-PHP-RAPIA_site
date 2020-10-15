@@ -9,8 +9,9 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="description" content="Robôs para seu negócio!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <title>Rapia - Automação do Trabalho Digital</title>
+        <title>Rapia - Robôs Digitais</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
