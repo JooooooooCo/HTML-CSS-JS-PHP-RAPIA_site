@@ -1575,18 +1575,7 @@ h1{
         padding-bottom: 25px;
     }
     
-    /*.footermaincontatoemail{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .footermaincontatofone{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
+    /*   
     .footermaincontatotext{
         padding-left: 0.9375rem;
     }

@@ -561,7 +561,7 @@
                             </div>
                             <div class="footermaincontatodados">
                                 <a href="https://g.page/rapia?share" target="_blank"><img src="img/footericonlocal.png"></a>
-                                <a href="https://g.page/rapia?share" target="_blank">      Itajaí - SC</a>
+                                <a href="https://g.page/rapia?share" target="_blank">Itajaí - SC</a>
                             </div>
                             <div class="footermaincontatotext">
                                 <p>Siga-nos nas redes sociais</p>
