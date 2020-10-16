@@ -7,7 +7,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="Robôs para seu negócio!">
+        <meta name="description" content="Robôs Digitais para seu negócio! RPA - Robotic Process Automation">
+        <meta http-equiv="content-language" content="pt-br">
+        <meta name="author" content="Joao Costa">
+        <meta name="creator" content="Joao Costa">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:type" content="website">
+        <meta name="geo.region" content="BR-SC" />
+        <meta name="geo.placename" content="Itaja&iacute;" />
+        <meta name="geo.position" content="-26.8967773;-48.7305979" />
+        <meta name="ICBM" content="-26.8967773, -48.7305979" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="index"/>
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -542,18 +551,22 @@
                             <img src="img/footerlogo.png">   
                         </div>
                         <div class="footermaincontato">
-                            <div class="footermaincontatoemail">
+                            <div class="footermaincontatodados">
                                 <a href="mailto:contato@rapia.com.br" target="_blank"><img src="img/footericonemail.png"></a>
                                 <a href="mailto:contato@rapia.com.br" target="_blank">contato@rapia.com.br</a>
                             </div>
-                            <div class="footermaincontatofone">
+                            <div class="footermaincontatodados">
                                 <a href="tel:+55047997029062" target="_blank"><img src="img/footericonfone.png"></a>
                                 <a href="tel:+55047997029062" target="_blank">(47) 9 9702-9062</a>
+                            </div>
+                            <div class="footermaincontatodados">
+                                <a href="https://g.page/rapia?share" target="_blank"><img src="img/footericonlocal.png"></a>
+                                <a href="https://g.page/rapia?share" target="_blank">      Itajaí - SC</a>
                             </div>
                             <div class="footermaincontatotext">
                                 <p>Siga-nos nas redes sociais</p>
                             </div>
-                            <div class="footermaincontatofone">
+                            <div class="footermaincontatodados">
                                 <a href="https://wa.me/554797029062" target="_blank"><img src="img/footericonwhats.png"></a>
                                 <a href="https://www.instagram.com/rapia_oficial/" target="_blank"><img src="img/footericoninstagram.png"></a>
                                 <a href="https://fb.me/rapia.oficial" target="_blank"><img src="img/footericonfacebook.png"></a>
